@@ -6,7 +6,7 @@ metadata:
   tags:
     - test
   links:
-    - url: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/apis
+    - url: https://github.com/mohankumarss/my-backstage-app/blob/main/api
       title: GitHub Repo
       icon: github
     - url: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/apis/petstore-api.yaml
