@@ -17,4 +17,4 @@ spec:
   lifecycle: experimental
   owner: team-c
   definition:
-    $text: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/apis/result.yaml
+    $text: https://github.com/mohankumarss/my-backstage-app/blob/main/api/test.yml
