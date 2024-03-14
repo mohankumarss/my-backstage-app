@@ -4,9 +4,6 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:54490
-  - url: http://localhost:63277
-  - url: localhost://
-  - url: http://localhost:64748
 paths:
   /ds/v1/Article/SFRedirectUrl/araias:
     get:
