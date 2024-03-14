@@ -1,718 +1,156 @@
-openapi: 3.0.3
+openapi: 3.0.0
 info:
   title: Uat
   version: 1.0.0
-  contact: {}
 servers:
-  - url: http://localhost
-  - url: localhost
+  - url: http://localhost:54490
+  - url: http://localhost:63277
+  - url: localhost://
+  - url: http://localhost:64748
 paths:
   /ds/v1/Article/SFRedirectUrl/araias:
     get:
+      tags:
+        - default
       summary: communityUrl
-      description: communityUrl
-      operationId: communityurl
-      requestBody:
-        content:
-          application/json:
-            examples:
-              communityUrl:
-                value: ''
-      responses:
-        '200':
-          description: ''
-  '/authentication/araias/mcloud3 ':
-    get:
-      summary: jwtgenerator
-      description: jwtgenerator
-      operationId: jwtgenerator
-      requestBody:
-        content:
-          application/json:
-            examples:
-              jwtgenerator:
-                value: ''
-      responses:
-        '200':
-          description: ''
-  /fs/v1/Note/PublishNote:
-    post:
-      summary: publishNote
-      description: publishNote
-      operationId: publishnote
       parameters:
-        - name: cookie
+        - name: Content-Type
           in: header
           schema:
             type: string
-            example: >-
-              NSC_iuuqt-vbu-bhjmf-deo-mc=ffffffff08cb7f0d45525d5f4f58455e445a4a425421;
-              NSC_iuuqt-vbu-bhjmf-ipnf-mc=ffffffff08cb7f0a45525d5f4f58455e445a4a425421;
-              NSC_iuuqt-vbu-bhjmf-mphhfs-mc=ffffffff08be97fe45525d5f4f58455e445a4a4264e5;
-              SSOTokenUAT=g8qAdsLjLhBYc%2FlwcxtyFSwba8Mrz9jmzEsJaWDHaSLTE2V1N9p%2Fu830%2BXdIC%2Bz8YWHRESBwVpVN3pH29rgWkBKatMUEWT7HDp%2FCOI9uhGNlSVHJiSSDrGegP9wTafcpoJm3anTDhdFTjpYRnFDiX1vxClRMiiJojUxN8onJyo2tD6spqKlSwrUu%2FpSPX6UutolPqdb7jUwSdfWGw0FnUWGpczMD2kK9dLPc4U%2Fwlu24jptu8ddiKvqPorcT2G701hA616YnpSJaNiY8onjCO%2Be3RF8JmSWJN7cXLpgUgOsF21aCt44uy55IQjG9Z0hh7RmOsl0BeiyeDtQhN%2FGflg%3D%3D%7C5%7Csmmkr%7CAgile%2DMarkets%7C20210925082359%7C79200%7C;
-              AMSid=1632479039;
-              NSC_iuuqt-vbu-bhjmf-sfgebub-mc=ffffffff08beff8c45525d5f4f58455e445a4a4251b9;
-              CloudFront-Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLnVhdC5hZ2lsZW1hcmtldHMuY29tL25wbS8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjMyOTE0NjE4fSwiSXBBZGRyZXNzIjp7IkFXUzpTb3VyY2VJcCI6IjAuMC4wLjAvMCJ9fX1dfQ__;
-              CloudFront-Signature=IV7xj6ds1rC4FY7idtK5~TxDSW9ZjwBcPg65nHSxNuLy762n~YyvfDfr9KulyrPKVxGWEg65jh8rCDX~HCtByzoIZhCciiaU6DCHv~WiLuPzsU9GhVvYLxdr~IiU3mN4fk2RdJ0-ZoOUs9~AGlJD3Rhliu24qEe~OgdMDYU8rrdhV~l0LIH6E-Whw1-Kcgk-IKU-JfVfgXecO45YLG~jlTafVLfhUeJGcu3OHCB-oy7pHfF78bkMt1fDd8OaOjtqvFJ70zXKYhqR5c0hJu8UvlEV1j2b9sFltTFGTJPwz017kkP4q9pQf-iuiao3FdPX2AHkD-C6cuTm51Ym3xcmPg__;
-              CloudFront-Key-Pair-Id=APKAIPNS3WAXOI2GLZTQ;
-              NSC_iuuq-vbu-bhjmf-gt-mc=ffffffff08befe5845525d5f4f58455e445a4a42366b;
-              NSC_iuuqt-vbu-bhjmf-dvtu_bdu-mc=ffffffff08beff8c45525d5f4f58455e445a4a425de5;
-              xZambeziCsrf=9mKo3bv8q/JqUMZ/q5B3T9A2zV+QKCVno9/5ceJo9xVQrCj0lVc5RtkLrYy/J9Lj
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                ApproverId:
-                  type: string
-                  example: ''
-                Attachments:
-                  type: array
-                  items: {}
-                  example: []
-                Audit:
-                  type: object
-                  properties:
-                    createdBy:
-                      type: string
-                      example: Mohankumar S
-                    createdOn:
-                      type: string
-                      example: '2021-09-09T04:04:42.597'
-                    modifiedBy:
-                      type: string
-                      example: Mohankumar S
-                    modifiedOn:
-                      type: string
-                      example: '2021-09-09T04:05:24.377'
-                Audits:
-                  type: string
-                  example: ''
-                AuthorLocation:
-                  type: string
-                  example: ''
-                AuthorNames:
-                  type: string
-                  example: ''
-                Authors:
-                  type: array
-                  items:
-                    type: object
-                    properties:
-                      authorEmailAddress:
-                        type: string
-                        example: davidvinodkumar.christopher@natwestmarkets.com
-                      authorGroupID:
-                        type: number
-                        example: 0
-                      authorLevelId:
-                        type: number
-                        example: 2
-                      authorLocation:
-                        type: string
-                        example: Kosmo One - Chennai
-                      biographyUrl:
-                        nullable: true
-                        example: null
-                      ecdEmployeeId:
-                        type: number
-                        example: 0
-                      email:
-                        nullable: true
-                        example: null
-                      id:
-                        type: number
-                        example: 927
-                      imageUrl:
-                        nullable: true
-                        example: null
-                      isActive:
-                        type: boolean
-                        example: true
-                      isDefault:
-                        type: number
-                        example: 1
-                      isairp:
-                        type: boolean
-                        example: false
-                      ismifidApprover:
-                        type: boolean
-                        example: false
-                      modifiedBy:
-                        nullable: true
-                        example: null
-                      modifiedOn:
-                        type: string
-                        example: '2021-09-09T03:03:32.4348271Z'
-                      name:
-                        type: string
-                        example: David Vinod Kumar Christopher
-                      personID:
-                        type: number
-                        example: 0
-                      phone:
-                        nullable: true
-                        example: null
-                      sortOrder:
-                        type: number
-                        example: 1
-                      title:
-                        nullable: true
-                        example: null
-                      type:
-                        nullable: true
-                        example: null
-                      username:
-                        type: string
-                        example: kumadan
-                  example:
-                    - authorEmailAddress: davidvinodkumar.christopher@natwestmarkets.com
-                      authorGroupID: 0
-                      authorLevelId: 2
-                      authorLocation: Kosmo One - Chennai
-                      biographyUrl: null
-                      ecdEmployeeId: 0
-                      email: null
-                      id: 927
-                      imageUrl: null
-                      isActive: true
-                      isDefault: 1
-                      isairp: false
-                      ismifidApprover: false
-                      modifiedBy: null
-                      modifiedOn: '2021-09-09T03:03:32.4348271Z'
-                      name: David Vinod Kumar Christopher
-                      personID: 0
-                      phone: null
-                      sortOrder: 1
-                      title: null
-                      type: null
-                      username: kumadan
-                Content:
-                  type: string
-                  example: |
-                    <p>test</p>
-                ContentID:
-                  type: number
-                  example: 0
-                Contributors:
-                  type: array
-                  items: {}
-                  example: []
-                CreatedBy:
-                  type: string
-                  example: ''
-                CreatedOn:
-                  type: string
-                  example: '2018-08-06 09:26:32.267'
-                EncryptedLink:
-                  type: string
-                  example: ''
-                ForwardComment:
-                  type: string
-                  example: ''
-                IncludeinDSsection:
-                  type: boolean
-                  example: false
-                IsCloned:
-                  type: boolean
-                  example: false
-                IsDisplayContributorsEnabled:
-                  type: boolean
-                  example: false
-                IsForward:
-                  type: number
-                  example: 0
-                IsSpellChecked:
-                  type: boolean
-                  example: false
-                ModifiedBy:
-                  type: string
-                  example: ''
-                ModifiedOn:
-                  type: string
-                  example: '2021-09-09T04:05:24.377'
-                NVClient:
-                  type: object
-                  properties:
-                    authorid:
-                      type: number
-                      example: 927
-                    description:
-                      type: string
-                      example: There are no NV clients in the distribution list
-                    otherComments:
-                      type: string
-                      example: ''
-                NoteId:
-                  type: number
-                  example: 0
-                OverridePeerApprovalRequired:
-                  type: boolean
-                  example: false
-                ParentID:
-                  type: number
-                  example: 0
-                PeerApprovalStateId:
-                  type: number
-                  example: 0
-                PreviewEmailId:
-                  type: string
-                  example: ''
-                Publication:
-                  type: object
-                  properties:
-                    commentaryType:
-                      type: string
-                      example: Sales Publication
-                    contentTypeId:
-                      nullable: true
-                      example: null
-                    defaultContent:
-                      type: string
-                      example: "1.1. Overview:<br />The purpose of this document is to describe testing approach, types of testing covered, risks and mitigation plans pertaining to testing of Strategy & Sales requirements. All Strategy & Sales releases are classified as agile projects and mostly consist of planned delivery of Strategy & Sales functionalities prioritized for the respective releases. This document covers the overall testing performed by NatWest Markets Strategy & Sales QA team for Strategy & Sales functionalities viz., end to end case workflow of the requirements.<br />1.2. Summary of results and conclusions:<br />Followings are the key highlights of testing carried out as part of this release:<br />Strategy & Sales test summary:<br />•\tFunctionalities delivered as part of Sprint and Business priority requirements were tested successfully. <br />•\tAll Blocker, Critical and Major Defects were fixed, retested and closed.<br />•\tRegression has been conducted before QA signoff, everything looks goods and we can proceed with the deployment to Production Servers.<br />•\tUAT has been performed by Global Production team , Few Enhancements were proposed and those were developed , deployed and tested.  <br />"
-                    defaultFilename:
-                      type: string
-                      example: sample attachment
-                    defaultSummary:
-                      type: string
-                      example: sample summary
-                    defaultTitle:
-                      type: string
-                      example: sample title
-                    description:
-                      nullable: true
-                      example: null
-                    inactive:
-                      type: boolean
-                      example: false
-                    isApprovalRequired:
-                      type: boolean
-                      example: false
-                    isDeskStrategyAnalytics:
-                      type: boolean
-                      example: false
-                    isFirstEnabled:
-                      type: boolean
-                      example: false
-                    isShowOnPortal:
-                      type: boolean
-                      example: true
-                    isTestPublication:
-                      type: boolean
-                      example: true
-                    isairpEnabled:
-                      type: boolean
-                      example: false
-                    isracaMandatory:
-                      type: boolean
-                      example: false
-                    jurisdictionid:
-                      type: number
-                      example: 0
-                    mandatoryTags:
-                      type: array
-                      items:
-                        type: number
-                        example: 139
-                      example:
-                        - 139
-                    optionalApprovalRequired:
-                      type: boolean
-                      example: true
-                    publicationId:
-                      type: number
-                      example: 3491
-                    publicationName:
-                      type: string
-                      example: Sales - Deployment Sanity Test publication
-                    publicationType:
-                      type: string
-                      example: Sales
-                    reportTime:
-                      nullable: true
-                      example: null
-                    requiresGcr:
-                      type: boolean
-                      example: false
-                    requiresSa:
-                      type: boolean
-                      example: false
-                    skipForApproval:
-                      type: boolean
-                      example: false
-                PublishedOn:
-                  type: string
-                  example: ''
-                ReadsCount:
-                  type: number
-                  example: 0
-                Recipients:
-                  type: array
-                  items:
-                    type: object
-                    properties:
-                      Company:
-                        type: string
-                        example: rbs
-                      Name:
-                        type: string
-                        example: Vishwa
-                      RecipientId:
-                        type: number
-                        example: 1144930
-                  example:
-                    - Company: rbs
-                      Name: Vishwa
-                      RecipientId: 1144930
-                ReportDate:
-                  type: string
-                  example: ''
-                RepublishAction:
-                  type: object
-                  properties:
-                    actionType:
-                      type: string
-                      example: None
-                    externalReason:
-                      nullable: true
-                      example: null
-                    includeTextInEmail:
-                      nullable: true
-                      example: null
-                    internalReason:
-                      nullable: true
-                      example: null
-                    isActive:
-                      type: boolean
-                      example: false
-                ReviewComment:
-                  type: string
-                  example: ''
-                SendFromAuthor:
-                  type: object
-                  properties:
-                    authorEmailAddress:
-                      type: string
-                      example: davidvinodkumar.christopher@natwestmarkets.com
-                    authorGroupID:
-                      type: number
-                      example: 0
-                    authorLevelId:
-                      type: number
-                      example: 2
-                    authorLocation:
-                      type: string
-                      example: Kosmo One - Chennai
-                    biographyUrl:
-                      nullable: true
-                      example: null
-                    ecdEmployeeId:
-                      type: number
-                      example: 0
-                    email:
-                      nullable: true
-                      example: null
-                    id:
-                      type: number
-                      example: 927
-                    imageUrl:
-                      nullable: true
-                      example: null
-                    isActive:
-                      type: boolean
-                      example: true
-                    isDefault:
-                      type: number
-                      example: 1
-                    isairp:
-                      type: boolean
-                      example: false
-                    ismifidApprover:
-                      type: boolean
-                      example: false
-                    modifiedBy:
-                      nullable: true
-                      example: null
-                    modifiedOn:
-                      type: string
-                      example: '2021-09-09T03:03:32.4348271Z'
-                    name:
-                      type: string
-                      example: David Vinod Kumar Christopher
-                    personID:
-                      type: number
-                      example: 0
-                    phone:
-                      nullable: true
-                      example: null
-                    sortOrder:
-                      type: number
-                      example: 1
-                    title:
-                      nullable: true
-                      example: null
-                    type:
-                      nullable: true
-                      example: null
-                    username:
-                      type: string
-                      example: kumadan
-                ShowOnPortal:
-                  type: boolean
-                  example: true
-                SkipContributor:
-                  type: boolean
-                  example: true
-                State:
-                  type: string
-                  example: Draft
-                Summary:
-                  type: string
-                  example: sample summary
-                Tags:
-                  type: array
-                  items:
-                    type: object
-                    properties:
-                      approvalRequired:
-                        type: boolean
-                        example: false
-                      isCompliance:
-                        type: boolean
-                        example: false
-                      modifiedBy:
-                        nullable: true
-                        example: null
-                      modifiedOn:
-                        type: string
-                        example: '2021-09-09T03:03:33.0588351Z'
-                      sendToVendors:
-                        type: boolean
-                        example: false
-                      tagDescription:
-                        type: string
-                        example: Sales Commentary
-                      tagDisplayName:
-                        type: string
-                        example: Sales Commentary
-                      tagId:
-                        type: number
-                        example: 18019
-                      tagName:
-                        type: string
-                        example: Sales Commentary
-                      tagType:
-                        type: object
-                        properties:
-                          category:
-                            type: number
-                            example: 0
-                          tagTypeId:
-                            type: number
-                            example: 139
-                          tagTypeName:
-                            type: string
-                            example: Sales Email Type
-                      ticker:
-                        nullable: true
-                        example: null
-                  example:
-                    - approvalRequired: false
-                      isCompliance: false
-                      modifiedBy: null
-                      modifiedOn: '2021-09-09T03:03:33.0588351Z'
-                      sendToVendors: false
-                      tagDescription: Sales Commentary
-                      tagDisplayName: Sales Commentary
-                      tagId: 18019
-                      tagName: Sales Commentary
-                      tagType:
-                        category: 0
-                        tagTypeId: 139
-                        tagTypeName: Sales Email Type
-                      ticker: null
-                Title:
-                  type: string
-                  example: Test for article publish using postman 1
-                TotalRecipients:
-                  type: number
-                  example: 0
-                WithProductionTeam:
-                  type: boolean
-                  example: false
-                isAttachmentPreviewed:
-                  type: boolean
-                  example: false
-            examples:
-              publishNote:
-                value:
-                  ApproverId: ''
-                  Attachments: []
-                  Audit:
-                    createdBy: Mohankumar S
-                    createdOn: '2021-09-09T04:04:42.597'
-                    modifiedBy: Mohankumar S
-                    modifiedOn: '2021-09-09T04:05:24.377'
-                  Audits: ''
-                  AuthorLocation: ''
-                  AuthorNames: ''
-                  Authors:
-                    - authorEmailAddress: davidvinodkumar.christopher@natwestmarkets.com
-                      authorGroupID: 0
-                      authorLevelId: 2
-                      authorLocation: Kosmo One - Chennai
-                      biographyUrl: null
-                      ecdEmployeeId: 0
-                      email: null
-                      id: 927
-                      imageUrl: null
-                      isActive: true
-                      isDefault: 1
-                      isairp: false
-                      ismifidApprover: false
-                      modifiedBy: null
-                      modifiedOn: '2021-09-09T03:03:32.4348271Z'
-                      name: David Vinod Kumar Christopher
-                      personID: 0
-                      phone: null
-                      sortOrder: 1
-                      title: null
-                      type: null
-                      username: kumadan
-                  Content: |
-                    <p>test</p>
-                  ContentID: 0
-                  Contributors: []
-                  CreatedBy: ''
-                  CreatedOn: '2018-08-06 09:26:32.267'
-                  EncryptedLink: ''
-                  ForwardComment: ''
-                  IncludeinDSsection: false
-                  IsCloned: false
-                  IsDisplayContributorsEnabled: false
-                  IsForward: 0
-                  IsSpellChecked: false
-                  ModifiedBy: ''
-                  ModifiedOn: '2021-09-09T04:05:24.377'
-                  NVClient:
-                    authorid: 927
-                    description: There are no NV clients in the distribution list
-                    otherComments: ''
-                  NoteId: 0
-                  OverridePeerApprovalRequired: false
-                  ParentID: 0
-                  PeerApprovalStateId: 0
-                  PreviewEmailId: ''
-                  Publication:
-                    commentaryType: Sales Publication
-                    contentTypeId: null
-                    defaultContent: "1.1. Overview:<br />The purpose of this document is to describe testing approach, types of testing covered, risks and mitigation plans pertaining to testing of Strategy & Sales requirements. All Strategy & Sales releases are classified as agile projects and mostly consist of planned delivery of Strategy & Sales functionalities prioritized for the respective releases. This document covers the overall testing performed by NatWest Markets Strategy & Sales QA team for Strategy & Sales functionalities viz., end to end case workflow of the requirements.<br />1.2. Summary of results and conclusions:<br />Followings are the key highlights of testing carried out as part of this release:<br />Strategy & Sales test summary:<br />•\tFunctionalities delivered as part of Sprint and Business priority requirements were tested successfully. <br />•\tAll Blocker, Critical and Major Defects were fixed, retested and closed.<br />•\tRegression has been conducted before QA signoff, everything looks goods and we can proceed with the deployment to Production Servers.<br />•\tUAT has been performed by Global Production team , Few Enhancements were proposed and those were developed , deployed and tested.  <br />"
-                    defaultFilename: sample attachment
-                    defaultSummary: sample summary
-                    defaultTitle: sample title
-                    description: null
-                    inactive: false
-                    isApprovalRequired: false
-                    isDeskStrategyAnalytics: false
-                    isFirstEnabled: false
-                    isShowOnPortal: true
-                    isTestPublication: true
-                    isairpEnabled: false
-                    isracaMandatory: false
-                    jurisdictionid: 0
-                    mandatoryTags:
-                      - 139
-                    optionalApprovalRequired: true
-                    publicationId: 3491
-                    publicationName: Sales - Deployment Sanity Test publication
-                    publicationType: Sales
-                    reportTime: null
-                    requiresGcr: false
-                    requiresSa: false
-                    skipForApproval: false
-                  PublishedOn: ''
-                  ReadsCount: 0
-                  Recipients:
-                    - Company: rbs
-                      Name: Vishwa
-                      RecipientId: 1144930
-                  ReportDate: ''
-                  RepublishAction:
-                    actionType: None
-                    externalReason: null
-                    includeTextInEmail: null
-                    internalReason: null
-                    isActive: false
-                  ReviewComment: ''
-                  SendFromAuthor:
-                    authorEmailAddress: davidvinodkumar.christopher@natwestmarkets.com
-                    authorGroupID: 0
-                    authorLevelId: 2
-                    authorLocation: Kosmo One - Chennai
-                    biographyUrl: null
-                    ecdEmployeeId: 0
-                    email: null
-                    id: 927
-                    imageUrl: null
-                    isActive: true
-                    isDefault: 1
-                    isairp: false
-                    ismifidApprover: false
-                    modifiedBy: null
-                    modifiedOn: '2021-09-09T03:03:32.4348271Z'
-                    name: David Vinod Kumar Christopher
-                    personID: 0
-                    phone: null
-                    sortOrder: 1
-                    title: null
-                    type: null
-                    username: kumadan
-                  ShowOnPortal: true
-                  SkipContributor: true
-                  State: Draft
-                  Summary: sample summary
-                  Tags:
-                    - approvalRequired: false
-                      isCompliance: false
-                      modifiedBy: null
-                      modifiedOn: '2021-09-09T03:03:33.0588351Z'
-                      sendToVendors: false
-                      tagDescription: Sales Commentary
-                      tagDisplayName: Sales Commentary
-                      tagId: 18019
-                      tagName: Sales Commentary
-                      tagType:
-                        category: 0
-                        tagTypeId: 139
-                        tagTypeName: Sales Email Type
-                      ticker: null
-                  Title: Test for article publish using postman 1
-                  TotalRecipients: 0
-                  WithProductionTeam: false
-                  isAttachmentPreviewed: false
+          example: application/json
       responses:
         '200':
-          description: ''
+          description: Successful response
+          content:
+            application/json: {}
+  /authentication/araias/mcloud3:
+    get:
+      tags:
+        - default
+      summary: jwtgenerator
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /4490/fs/v1/Note/PublishNote:
+    post:
+      tags:
+        - default
+      summary: publishNote
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              type: string
+              example: >-
+                "{\"NoteId\":0,\"State\":\"Draft\",\"EncryptedLink\":\"\",\"PreviewEmailId\":\"\",\"Title\":\"Test
+                for article publish using postman 1\",\"Summary\":\"sample
+                summary\",\"CreatedOn\":\"2018-08-06
+                09:26:32.267\",\"ModifiedOn\":\"2021-09-09T04:05:24.377\",\"ModifiedBy\":\"\",\"CreatedBy\":\"\",\"Publication\":{\"publicationId\":3491,\"contentTypeId\":null,\"publicationName\":\"Sales
+                - Deployment Sanity Test
+                publication\",\"inactive\":false,\"defaultTitle\":\"sample
+                title\",\"defaultSummary\":\"sample
+                summary\",\"defaultContent\":\"1.1. Overview:<br />The purpose
+                of this document is to describe testing approach, types of
+                testing covered, risks and mitigation plans pertaining to
+                testing of Strategy & Sales requirements. All Strategy & Sales
+                releases are classified as agile projects and mostly consist of
+                planned delivery of Strategy & Sales functionalities prioritized
+                for the respective releases. This document covers the overall
+                testing performed by NatWest Markets Strategy & Sales QA team
+                for Strategy & Sales functionalities viz., end to end case
+                workflow of the requirements.<br />1.2. Summary of results and
+                conclusions:<br />Followings are the key highlights of testing
+                carried out as part of this release:<br />Strategy & Sales test
+                summary:<br />•\\tFunctionalities delivered as part of Sprint
+                and Business priority requirements were tested successfully. <br
+                />•\\tAll Blocker, Critical and Major Defects were fixed,
+                retested and closed.<br />•\\tRegression has been conducted
+                before QA signoff, everything looks goods and we can proceed
+                with the deployment to Production Servers.<br />•\\tUAT has been
+                performed by Global Production team , Few Enhancements were
+                proposed and those were developed , deployed and tested.  <br
+                />\",\"defaultFilename\":\"sample
+                attachment\",\"requiresSa\":false,\"requiresGcr\":false,\"isApprovalRequired\":false,\"description\":null,\"jurisdictionid\":0,\"isTestPublication\":true,\"isFirstEnabled\":false,\"reportTime\":null,\"isracaMandatory\":false,\"isairpEnabled\":false,\"isShowOnPortal\":true,\"publicationType\":\"Sales\",\"commentaryType\":\"Sales
+                Publication\",\"optionalApprovalRequired\":true,\"skipForApproval\":false,\"isDeskStrategyAnalytics\":false,\"mandatoryTags\":[139]},\"SendFromAuthor\":{\"id\":927,\"ecdEmployeeId\":0,\"isairp\":false,\"name\":\"David
+                Vinod Kumar
+                Christopher\",\"username\":\"kumadan\",\"authorEmailAddress\":\"davidvinodkumar.christopher@natwestmarkets.com\",\"authorGroupID\":0,\"authorLocation\":\"Kosmo
+                One -
+                Chennai\",\"imageUrl\":null,\"biographyUrl\":null,\"title\":null,\"phone\":null,\"email\":null,\"type\":null,\"personID\":0,\"modifiedOn\":\"2021-09-09T03:03:32.4348271Z\",\"modifiedBy\":null,\"isActive\":true,\"authorLevelId\":2,\"isDefault\":1,\"sortOrder\":1,\"ismifidApprover\":false},\"Authors\":[{\"id\":927,\"ecdEmployeeId\":0,\"isairp\":false,\"name\":\"David
+                Vinod Kumar
+                Christopher\",\"username\":\"kumadan\",\"authorEmailAddress\":\"davidvinodkumar.christopher@natwestmarkets.com\",\"authorGroupID\":0,\"authorLocation\":\"Kosmo
+                One -
+                Chennai\",\"imageUrl\":null,\"biographyUrl\":null,\"title\":null,\"phone\":null,\"email\":null,\"type\":null,\"personID\":0,\"modifiedOn\":\"2021-09-09T03:03:32.4348271Z\",\"modifiedBy\":null,\"isActive\":true,\"authorLevelId\":2,\"isDefault\":1,\"sortOrder\":1,\"ismifidApprover\":false}],\"Recipients\":[{\"RecipientId\":1144930,\"Name\":\"Vishwa\",\"Company\":\"rbs\"}],\"AuthorNames\":\"\",\"AuthorLocation\":\"\",\"ReportDate\":\"\",\"IsSpellChecked\":false,\"PublishedOn\":\"\",\"Content\":\"<p>test</p>\\n\",\"ShowOnPortal\":true,\"IsCloned\":false,\"ParentID\":0,\"ContentID\":0,\"Tags\":[{\"tagId\":18019,\"tagName\":\"Sales
+                Commentary\",\"tagDescription\":\"Sales
+                Commentary\",\"tagDisplayName\":\"Sales
+                Commentary\",\"tagType\":{\"tagTypeId\":139,\"tagTypeName\":\"Sales
+                Email
+                Type\",\"category\":0},\"sendToVendors\":false,\"isCompliance\":false,\"ticker\":null,\"modifiedOn\":\"2021-09-09T03:03:33.0588351Z\",\"modifiedBy\":null,\"approvalRequired\":false}],\"Attachments\":[],\"Audits\":\"\",\"WithProductionTeam\":false,\"isAttachmentPreviewed\":false,\"RepublishAction\":{\"actionType\":\"None\",\"internalReason\":null,\"externalReason\":null,\"includeTextInEmail\":null,\"isActive\":false},\"ApproverId\":\"\",\"ReviewComment\":\"\",\"IncludeinDSsection\":false,\"PeerApprovalStateId\":0,\"Audit\":{\"createdBy\":\"Mohankumar
+                S\",\"createdOn\":\"2021-09-09T04:04:42.597\",\"modifiedBy\":\"Mohankumar
+                S\",\"modifiedOn\":\"2021-09-09T04:05:24.377\"},\"TotalRecipients\":0,\"ReadsCount\":0,\"OverridePeerApprovalRequired\":false,\"IsForward\":0,\"ForwardComment\":\"\",\"IsDisplayContributorsEnabled\":false,\"SkipContributor\":true,\"Contributors\":[],\"NVClient\":{\"description\":\"There
+                are no NV clients in the distribution
+                list\",\"authorid\":927,\"otherComments\":\"\"}}"
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/json
+        - name: Cookie
+          in: header
+          schema:
+            type: string
+          example: >-
+            NSC_iuuqt-vbu-bhjmf-deo-mc=ffffffff08cb7f0d45525d5f4f58455e445a4a425421;
+            NSC_iuuqt-vbu-bhjmf-ipnf-mc=ffffffff08cb7f0a45525d5f4f58455e445a4a425421;
+            NSC_iuuqt-vbu-bhjmf-mphhfs-mc=ffffffff08be97fe45525d5f4f58455e445a4a4264e5;
+            SSOTokenUAT=g8qAdsLjLhBYc%2FlwcxtyFSwba8Mrz9jmzEsJaWDHaSLTE2V1N9p%2Fu830%2BXdIC%2Bz8YWHRESBwVpVN3pH29rgWkBKatMUEWT7HDp%2FCOI9uhGNlSVHJiSSDrGegP9wTafcpoJm3anTDhdFTjpYRnFDiX1vxClRMiiJojUxN8onJyo2tD6spqKlSwrUu%2FpSPX6UutolPqdb7jUwSdfWGw0FnUWGpczMD2kK9dLPc4U%2Fwlu24jptu8ddiKvqPorcT2G701hA616YnpSJaNiY8onjCO%2Be3RF8JmSWJN7cXLpgUgOsF21aCt44uy55IQjG9Z0hh7RmOsl0BeiyeDtQhN%2FGflg%3D%3D%7C5%7Csmmkr%7CAgile%2DMarkets%7C20210925082359%7C79200%7C;
+            AMSid=1632479039;
+            NSC_iuuqt-vbu-bhjmf-sfgebub-mc=ffffffff08beff8c45525d5f4f58455e445a4a4251b9;
+            CloudFront-Policy=eyJTdGF0ZW1lbnQiOiBbeyJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLnVhdC5hZ2lsZW1hcmtldHMuY29tL25wbS8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjMyOTE0NjE4fSwiSXBBZGRyZXNzIjp7IkFXUzpTb3VyY2VJcCI6IjAuMC4wLjAvMCJ9fX1dfQ__;
+            CloudFront-Signature=IV7xj6ds1rC4FY7idtK5~TxDSW9ZjwBcPg65nHSxNuLy762n~YyvfDfr9KulyrPKVxGWEg65jh8rCDX~HCtByzoIZhCciiaU6DCHv~WiLuPzsU9GhVvYLxdr~IiU3mN4fk2RdJ0-ZoOUs9~AGlJD3Rhliu24qEe~OgdMDYU8rrdhV~l0LIH6E-Whw1-Kcgk-IKU-JfVfgXecO45YLG~jlTafVLfhUeJGcu3OHCB-oy7pHfF78bkMt1fDd8OaOjtqvFJ70zXKYhqR5c0hJu8UvlEV1j2b9sFltTFGTJPwz017kkP4q9pQf-iuiao3FdPX2AHkD-C6cuTm51Ym3xcmPg__;
+            CloudFront-Key-Pair-Id=APKAIPNS3WAXOI2GLZTQ;
+            NSC_iuuq-vbu-bhjmf-gt-mc=ffffffff08befe5845525d5f4f58455e445a4a42366b;
+            NSC_iuuqt-vbu-bhjmf-dvtu_bdu-mc=ffffffff08beff8c45525d5f4f58455e445a4a425de5;
+            xZambeziCsrf=9mKo3bv8q/JqUMZ/q5B3T9A2zV+QKCVno9/5ceJo9xVQrCj0lVc5RtkLrYy/J9Lj
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
   /fs/v1/Note/UploadImage:
     post:
+      tags:
+        - default
       summary: http://localhost:64748/fs/v1/Note/UploadImage
-      description: http://localhost:64748/fs/v1/Note/UploadImage
-      operationId: httpLocalhost64748FsV1NoteUploadimage
       requestBody:
         content:
           multipart/form-data:
             schema:
               type: object
               properties:
-                ContentType:
-                  type: string
-                  example: svg
                 file:
                   type: string
                   format: binary
+                ContentType:
+                  type: string
+                  example: svg
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: multipart/form-data; boundary=----WebKitFormBoundaryWrPTPfpzIoWKqKnQ
       responses:
         '200':
-          description: ''
-tags: []
+          description: Successful response
+          content:
+            application/json: {}
