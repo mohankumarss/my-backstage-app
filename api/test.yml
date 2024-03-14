@@ -13,9 +13,3 @@ metadata:
     - url: https://github.com/mohankumarss/my-backstage-app/blob/main/api/result.yml
       title: API Spec
       icon: code
-spec:
-  type: openapi
-  lifecycle: experimental
-  owner: team-c
-definition:
-    $text: ./result.yml
