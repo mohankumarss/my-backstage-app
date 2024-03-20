@@ -9,7 +9,7 @@ metadata:
     - url: https://github.com/mohankumarss/my-backstage-app/blob/main/api
       title: GitHub Repo
       icon: github
-    - url: https://github.com/mohankumarss/my-backstage-app/blob/main/api/result.yml
+    - url: https://petstore.swagger.io/v2/swagger.json
       title: API Spec
       icon: code
 spec:
