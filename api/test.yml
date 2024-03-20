@@ -17,4 +17,4 @@ spec:
   lifecycle: experimental
   owner: team-c
   definition:
-    $text: https://github.com/mohankumarss/my-backstage-app/blob/main/api/result.yml
+    $text: https://petstore.swagger.io/v2/swagger.json
