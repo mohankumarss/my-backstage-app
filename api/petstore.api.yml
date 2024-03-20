@@ -18,4 +18,4 @@ spec:
   lifecycle: experimental
   owner: team-c
   definition:
-    $text: ./petstore.oas.yaml
+    $text: https://petstore.swagger.io/v2/swagger.json
