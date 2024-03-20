@@ -54,5 +54,9 @@
     "*.{json,md}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "global-agent": "^3.0.0",
+    "undici": "^6.9.0"
   }
 }
